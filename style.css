@@ -1,0 +1,296 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Zilla Slab', serif;
+    background-color: aliceblue;
+    color: #2E281A;
+
+}
+
+.page {
+    background-color: #FDCA47;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 5px 20px gray;
+    position: relative;
+    z-index: 0;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    max-width: 960px;
+    width: 100%;
+    opacity: 40%;
+    z-index: -1;
+}
+
+/*===================about me===================*/
+
+header {
+    padding: 15% 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_me {
+    margin-bottom: 2rem;
+    animation-name: from_up;
+    animation-duration: 1s;
+}
+
+@keyframes from_up {
+    0% {margin-top: -30%;}
+    100% {}
+}
+
+
+.invisible {
+    opacity: 0;
+    animation-name: invisible;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes invisible {
+    0% {opacity: 0}
+    100% {opacity: 1;}
+}
+
+.resume_btn {
+    align-self: center;
+    margin: 1rem;
+    padding: 1rem;
+    color: #2E281A;
+    border: 1px solid #2E281A;
+    text-decoration: none;
+    transition: transform .7s ease-in-out;
+}
+
+.resume_btn:hover {
+    transform: rotateY(360deg);
+}
+
+/*===================start of navbar===================*/
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    background-color: #2E281A;
+    color: #FEE8AE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 3rem;
+}
+
+.nav_btn, .nav_resume {
+    color: #FEE8AE;
+    text-decoration: none;
+}
+
+.nav_btn:visited, .nav_resume:visited {
+    color: #FEE8AE;
+    text-decoration: none;
+}
+
+.nav_btn:hover, .nav_resume:hover {
+    color: #DEA002;
+}
+
+.nav_resume {
+    padding-left: 2vw;
+}
+.nav_menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2vw;
+    list-style-type: none;
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .nav_menu {
+        flex-direction: column;
+        align-items: center;
+        padding-inline-start: 0px;
+        padding: 0;
+        gap: 1rem;
+    }
+    .nav_resume {
+        padding-inline-start: 0px;
+    }
+}
+
+
+/*===================end of navbar===================*/
+
+h2 {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.container {
+    width: 80%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+/*===================experience===================*/
+
+.con_bdr {
+    border-left: 3px solid #2E281A;
+    padding-left: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: baseline;
+}
+
+@media (max-width: 650px) {
+    .con_bdr {
+        grid-template-columns: 1fr;
+    }
+}
+
+.job_name {
+    color: #DEA002;
+}
+.working_time {
+    font-size: 0.8rem;
+}
+.working_list {
+    color: #DEA002;
+}
+
+/*===================projects===================*/
+
+.con_proj {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 650px) {
+    .con_proj {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.proj_img {
+    width: 7rem;
+}
+
+.proj_a {
+    opacity: 50%;
+    text-decoration: none;
+    color: #2E281A;
+}
+
+.proj_a:hover {
+    opacity: 1;
+}
+
+a:active {
+    transform: scale(110%);
+}
+
+/*===================contact===================*/
+
+
+
+form {
+    width: auto;
+}
+
+fieldset {
+    border: none;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-row: 1fr 4fr 1fr;
+    gap: 2rem;
+}
+
+legend {
+    text-align: center;
+    color: #DEA002;
+}
+
+input, .mess_text{
+    background-color: #fdc94743;
+    border: none;
+}
+
+.mess_text {
+    grid-column: 1/4;
+    resize: none;
+}
+
+.mess_btn {
+    grid-column: 2/-1;
+    background-color: #DEA002;
+    border: none
+}
+
+.mess_btn:hover {
+    transform: scale(110%);
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    fieldset {
+        grid-template-columns: 1fr;
+    }
+
+    .mess_text {
+        grid-column: 1;
+        resize: none;
+    }
+    
+    .mess_btn {
+        grid-column: 1;
+    }
+}
+
+/*===================footer===================*/
+
+footer {
+    padding: 2rem;
+    display: flex;
+    justify-content:space-around;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    text-decoration: none;
+    color: #DEA002;
+    font-size: 1rem;
+}
+
+.icon:hover {
+    color: #2E281A;
+}
+

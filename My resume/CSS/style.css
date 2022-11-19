@@ -1,0 +1,84 @@
+
+body {
+    background-color: rgb(218, 222, 228);
+}
+.all-inside {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    background-color: #fff;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ========= main side ========= */
+
+.main-side {
+    background-color: #fff;
+    width: 830px;
+    padding-left: 80px;
+    padding-right: 100px;
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+.me-sections {
+    margin-bottom: 60px;
+}
+
+.project-link {
+    color: black;
+    font-size: 14px;
+    line-height: 24px;
+}
+.project-link:hover {
+    color: rgb(150, 12, 65);
+}
+
+.third-title {
+    margin-bottom: 5px;
+}
+
+.job-name {
+    color: rgb(150, 12, 65);
+}
+
+.working-time {
+    color: rgb(78, 78, 78);
+    font-style: italic;
+}
+
+.working-list {
+    margin-left: 30px;
+    margin-bottom: 40px;
+    line-height: 2;
+}
+
+/* ========= aside ========= */
+
+.aside {
+    background-color: rgb(150, 12, 65);
+    color: white;
+}
+
+.aside-div {
+    padding-left: 50px;
+    margin-bottom: 40px;
+}
+
+.link {
+    color: white;
+    opacity: 0.5;
+}
+
+.link:hover {
+    color: white;
+    opacity: 1;
+}
+
+ul {
+    padding-left: 20px;
+    line-height: 2;
+}

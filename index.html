@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <title>Portfolio Website</title>
+</head>
+
+<body>
+    <div class="page">
+        <div><img class="bg" src="images/background.png" alt=""></div>
+        <header> <!--About me-->
+            <div class="about_me">
+                <h1>Hi, I'm Agata</h1>
+                <div>Frontend Developer</div>
+            </div>
+            <p class="about_me_text">
+                Hello! I'm Agata. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iure laborum animi ab magni sint repellat natus facere earum minima voluptas ducimus, ratione, consectetur veritatis deserunt modi esse vel soluta!
+            </p>
+            <a class="resume_btn invisible" href="My resume/index.html" target="_blank">See my resume</a>
+        </header>
+        <div class="invisible">
+            <div class="sticky"> <!--Navbar-->
+                <div class="navbar">
+                    <div><a class="nav_resume" href="My resume/index.html" target="blank" >Resume</a></div>
+                    <ul class="nav_menu">
+                        <li><a class="nav_btn" href="#top">Home</a></li>
+                        <li><a class="nav_btn" href="#work">Experience</a></li>
+                        <li><a class="nav_btn" href="#projects">Projects</a></li>
+                        <li><a class="nav_btn" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div> <!--Experience-->
+                <a name="work"></a><br>
+                <h2>Work experience</h2>
+                    <div class="container">
+                        <div class="con_bdr">
+                            <div>
+                                <h3><span class='job_name'>Designer assistant</span> at El-Project Sp. z o.o.</h3>
+                                <p class='working_time'>12/2020 - now</p>
+                            </div>
+                            <div>
+                                <ul class='working_list'>
+                                    <li>designing cable routes in AutoCAD</li>
+                                    <li>contact with the client</li>
+                                    <li>completing documentation</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3><span class='job_name'>Bridge inspector assistant</span> at DTŚ S.A.</h3>
+                                <p class='working_time'>10/2020 - 12/2020</p>
+                            </div>
+                            <div>
+                                <ul class='working_list'>
+                                    <li>office work</li>
+                                    <li>site inspection</li>
+                                    <li>monitoring implementation based on the schedule and reports</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3><span class='job_name'>Tattooist</span> at Tattoo studio „Sine Metu Tattoo”</h3>
+                                <p class='working_time'>11/2014 - 09/2020</p>
+                            </div>
+                            <div>
+                                <ul class='working_list'>
+                                    <li>creating graphic designs</li>
+                                    <li>making tattoos</li>
+                                    <li>studio supplies</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div> <!--Projects-->
+                <a name="projects"></a><br>
+                <h2>Projects</h2>
+                <div class="container con_proj">
+                    <a class="proj_a" href="" target="_blank">
+                        <div class="project">
+                            <img class="proj_img" src="images/project1.png" alt="">
+                            <h3>Project 1.</h3>
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia magnam, alias similique soluta perspiciatis iste quibusdam autem velit molestias nostrum assumenda numquam magni quasi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt aperiam dolor non architecto dolorum dolorem error asperiores deserunt delectus! </div>
+                        </div>
+                    </a>
+                    <a class="proj_a" href="" target="_blank">
+                        <div class="project">
+                            <img class="proj_img" src="images/project2.png" alt="">
+                            <h3>Project 2.</h3>
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia magnam, alias similique soluta perspiciatis iste quibusdam autem velit molestias nostrum assumenda numquam magni quasi.</div>
+                        </div>
+                    </a>
+                    <a class="proj_a" href="" target="_blank">
+                        <div class="project">
+                            <img class="proj_img" src="images/project3.png" alt="">
+                            <h3>Project 3.</h3>
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia magnam, alias similique soluta perspiciatis iste quibusdam autem velit molestias nostrum assumenda numquam magni quasi. Impedit molestiae voluptate deserunt amet obcaecati reiciendis unde explicabo aperiam necessitatibus!</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div> <!--Contact-->
+                <a name="contact"></a><br>
+                <h2>Contact</h2>
+                <div class="container">
+                    <form action="" id="message">
+                        <fieldset>
+                            <legend><h3>Send me a message</h3></legend>
+                            <div  class="mess_name"> 
+                                Name: <input type="text" name="username" required>
+                            </div>
+                            <div class="mess_email"> 
+                                E-mail: <input type="email" name="email" id="email" placeholder="email@gmail" required></input>
+                            </div>
+                            <textarea class="mess_text" name="message" id="message" cols="30" rows="10" placeholder="Enter text here" required></textarea>
+                            <input class="mess_btn" type="submit">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <footer> <!--Footer-->
+                <div class="socialmedia">
+                    <a class="icon" href="https://github.com/Agatta52" target="_blank">
+                        <i class="fa fa-github fa_custom fa-3x"></i>
+                        <div>GitHub</div>
+                    </a>
+                </div>
+                <div class="socialmedia">
+                    <a class="icon" href="https://www.instagram.com/sinemetutattoo/" target="_blank">
+                        <i class="fa fa-instagram fa_custom fa-3x"></i>
+                        <div>Instagram</div>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
